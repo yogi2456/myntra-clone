@@ -1,0 +1,59 @@
+.register {
+    width: 100%;
+    height: 432px;
+    background-color: #FDEFEB;
+}
+.register1 {
+    width: 40%;
+    height: 350px;
+    border: 1px solid #FDEFEB;
+    margin: auto;
+    padding-top: 20px;
+}
+.register2 {
+    width: 70%;
+    margin: auto;
+    border: 1px solid #FDEFEB;
+    margin-top: -5px;
+    height: 400px;
+}
+.register3 {
+    width: 100%;
+    background-color: white;
+    height: 287px;
+    margin-top: -5px;
+}
+.register4 {
+    width: 80%;
+    margin: auto;
+    border: 1px solid white;
+    height: 250px;
+}
+.register4 > form > h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.register4 > form > input {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    border: 1px solid gray;
+}
+::placeholder {
+    font-size: 10px;
+    padding-left: 10px;
+}
+.para {
+    margin-top: 20px;
+    font-size: 8px;
+    color: gray;
+    margin-bottom: 15px;
+}
+span {
+    color: rgb(243, 30, 108);
+}
+.value1 {
+    background-color: rgb(243, 30, 108);
+    color: white;
+}

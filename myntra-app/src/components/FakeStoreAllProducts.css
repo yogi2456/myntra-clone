@@ -1,0 +1,20 @@
+.home1 {
+    width: 100%;
+    height: 80px;
+    background-color: #FFFFFF;
+    /* border: 1px solid blue; */
+    padding-top: 20px;
+}
+.home2 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.home2 > div:nth-child(1) {
+    width: 50%;
+    height: 300px;
+}
+.home2 > div:nth-child(2) {
+    width: 50%;
+    height: 300px;
+}
