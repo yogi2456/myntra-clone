@@ -90,18 +90,18 @@ const FakeStoreAllProducts = () => {
                                 style={{
                                     width: "18%",
                                     border: "2px solid black",
-                                    height: "250px",
+                                    height: "270px",
                                     marginBottom: "30px",
                                     overflow: "hidden"
                                 }}
                             >
                                 <img
-                                    style={{ height: "70%", width: "100%" }}
+                                    style={{ height: "50%", width: "100%" }}
                                     src={productObj.image} alt=""
                                 />
-                                <p style={{ fontSize: "12px" }}>{productObj.title}</p>
-                                <h2>{productObj.price}</h2>
-                                <button style={{backgroundColor: "blue", color: "white", textAlign: "center", marginLeft: "30px", height: "30px", width: "70px", outline: "none", border: "none"}}>Add to cart</button>
+                                <p style={{ fontSize: "10px", textAlign: "center", marginTop: "10px" }}>{productObj.title}</p>
+                                <h2 style={{fontSize: "14px", textAlign: "center", marginTop: "10px"}}>{productObj.price}</h2>
+                                <button style={{backgroundColor: "blue", color: "white", textAlign: "center", marginTop: "10px", marginLeft: "30px", height: "30px", width: "100px", outline: "none", border: "none"}}>Add to cart</button>
                             </div>
                         ))}
                     </div>

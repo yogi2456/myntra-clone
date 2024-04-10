@@ -54,7 +54,7 @@ const Login = () => {
                                     <input type='email' name='email' onChange={handleChange} required placeholder="EMAIL ADDRESS *" /> <br />
                                     <input type='password' name='password' onChange={handleChange} required placeholder="PASSWORD *" /> <br />
                                     <p className='para'>By continuing, I agree to the <span>Terms of Use</span> & <span>Privacy Policy</span></p>
-                                    <input className='value' type='submit' value="Register" />
+                                    <input className='value' type='submit' value="Login" />
                                 </form>
                             </div>
                         </div>
