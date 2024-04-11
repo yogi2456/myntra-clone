@@ -5,6 +5,7 @@ import './FakeStoreAllProducts.css'
 
 const FakeStoreAllProducts = () => {
     const [allProducts, setAllProducts] = useState([]); // to just get products 20 -> 20
+    const [filter, setFilter] = useState(data)
     //   console.log(allProducts, "allProducts");
 
     const [search, setSearch] = useState(""); // shose
@@ -52,6 +53,11 @@ const FakeStoreAllProducts = () => {
         getProducts();
     }, []);
 
+    const filterProduct = (cat) => {
+        const updatedList = data.filter((x) => x.category === cat);
+        setFilter(updatedList);
+    }
+
     return (
         <>
             <div className="home">
@@ -73,6 +79,13 @@ const FakeStoreAllProducts = () => {
                 <div style={{ marginLeft: "42%", marginTop: "30px" }}>
                     <h2>Search Product:</h2>
                     <input style={{ marginRight: "80px", width: "200px" }} placeholder="Mens.." value={search} onChange={handleChange} />
+                </div>
+                <div className="buttons d-flex justify-content-center mb-5 pb-5">
+                    <button className="btn btn-outline-dark me-2" onClick={() => setFilter(data)}>All</button>
+                    <button className='btn btn-outline-dark me-2' onClick={() => filterProduct("men's clothing")}>Men's Clothing</button>
+                    <button className='btn btn-outline-dark me-2' onClick={() => filterProduct("women's clothing")}>Women's Clothing</button>
+                    <button className='btn btn-outline-dark me-2' onClick={() => filterProduct("jewelery")}>Jewelery</button>
+                    <button className='btn btn-outline-dark me-2' onClick={() => filterProduct("electronics")}>Electronic</button>
                 </div>
                 {filterProducts?.length ? (
                     <div
